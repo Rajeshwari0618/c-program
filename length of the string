@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+int main()
+{
+char st[]="C Programming";
+int len;
+for(len=0;st[len]!=0;++len);
+printf("The string length is:%d",len);
+}
