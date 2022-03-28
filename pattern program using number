@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main()
+{
+   int row ,col,inp,num;
+   scanf("%d",&inp);
+   for(row=1;row<=inp;row++)
+   {
+       num=row;
+       for(col=1;col<=inp;col++)
+       {
+       printf("%d",num);
+       num++;
+   }
+   printf("\n");
+   }
+}
