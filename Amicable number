@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main()
+{
+   
+int num1,num2,inc,sum1=0,sum2=0;
+printf("Enter num1 and num2 :");
+scanf("%d %d",&num1,&num2);
+for(inc=1;inc<num1;inc++)
+{
+    if(num1%inc==0)
+    {
+        sum1=sum1+inc;
+    }
+}
+for(inc=1;inc<num2;inc++)
+{
+    if(num2%inc==0)
+    {
+        sum2=sum2+inc;
+    }
+}
+if((num1==sum2)&&(num2==sum1))
+{
+    printf("The given number %d and %d are amicable number.",num1,num2);
+}
+else
+{
+    printf("The given number %d %d are  not an amicable number.",num1,num2);
+}
+}
